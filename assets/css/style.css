@@ -1,3 +1,12 @@
+
+:root {
+    --orange: #EF613B;
+    --pink: #F4AAB8;
+    --cream:#FAF4E9;
+    --black:#000000;
+  }
+
+
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +19,15 @@
     position: fixed;
     z-index: 1000;
 } */
+
+#header .nav-link{
+    font-weight: 600;
+    margin:0 4px;
+    border-bottom: 2px solid var(--orange);
+}
+#header .nav-link:hover{
+    border-bottom: 2px solid var(--cream);
+}
 
 /* header section ends */
 
@@ -27,7 +45,11 @@
 /* welcome section ends */
 
 /* 4.  About  section starts --------------------------------------*/
-.about {padding: 50px 0 100px;}
+.about {
+    padding: 50px 0 100px;
+    background-color: var(--cream);
+
+}
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -40,7 +62,7 @@
     font-size: 16px;
     color: #999fb3;
     padding: 35px 0 43px;
-    border-bottom: 1px solid #999fb3;
+    border-bottom: 1px solid var(--pink);
 }
 .single-about-add-info {
     margin: 35px 0;
@@ -67,4 +89,20 @@
 .single-about-img img {
     max-width: 500px;
     height: 468px;
+}
+
+
+
+
+
+/* owl-carousel */
+.owl-carousel .item{
+    background-color: var(--pink);
+    margin:0 10px;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 40px;
+}
+.section-heading{
+    padding: 20px 0;
 }
