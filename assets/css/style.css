@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
 
 :root {
     --orange: #EF613B;
@@ -6,11 +11,9 @@
     --black:#000000;
   }
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
+.heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
 }
 
 /* header section starts */
@@ -28,27 +31,33 @@
 #header .nav-link:hover{
     border-bottom: 2px solid var(--cream);
 }
-
+.navbar{
+    background-color: var(--pink);
+}
 /* header section ends */
 
 
 /* welcome section starts */
 
-.welcome{
-    background: linear-gradient(to bottom, rgba(224, 220, 220, 0.5), rgba(208, 205, 205, 0.5)), url(../images/banner.png) no-repeat;
-    /* background:url(../images/banner.png)no-repeat; */
-    background-size:cover;
-    background-position: center;
-    height:100vh;
+.welcome-bg{
+    background-color: var(--orange);
+    border-radius:50px;
+    text-align: center;
 }
-
+.welcome-content{
+    color:white;
+    
+}
+/* .welcome-content h1{
+    font-weight: 800;
+} */
 /* welcome section ends */
 
 /* 4.  About  section starts --------------------------------------*/
 .about {
     padding: 50px 0 100px;
     background-color: var(--cream);
-
+    font-family: 'Playfair Display', serif;
 }
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
@@ -82,7 +91,7 @@
     content: " ";
     top: 0;
     left:  0;
-    width: 109%;
+    width: 100%;
     height:  100%;
     background: rgba(31,44,108,.3);
 }
