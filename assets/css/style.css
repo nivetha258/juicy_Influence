@@ -26,11 +26,12 @@
 #header .nav-link{
     font-weight: 600;
     margin:0 4px;
-    border-bottom: 2px solid var(--orange);
+    /* border-bottom: 2px solid var(--pink); */
 }
 #header .nav-link:hover{
-    border-bottom: 2px solid var(--cream);
+    /* border-bottom: 2px solid var(--cream); */
 }
+
 .navbar{
     background-color: var(--pink);
 }
@@ -38,9 +39,12 @@
 
 
 /* welcome section starts */
+.welcome{
+    background-color: var(--orange);
+}
 
 .welcome-bg{
-    background-color: var(--orange);
+    /* background-color: var(--orange); */
     border-radius:50px;
     text-align: center;
 }
